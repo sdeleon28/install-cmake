@@ -5,6 +5,9 @@
 Downloads CMake and ninja-build binaries.
 Works for Linux, macOS, and Windows.
 
+This fork has updated links for new release file namings. It does not attempt to handle links to old versions gracefully.
+It also updates the default version.
+
 *Uses some code from <https://github.com/lukka/get-cmake> and <https://github.com/seanmiddleditch/gha-setup-ninja>.*
 
 ## Using
