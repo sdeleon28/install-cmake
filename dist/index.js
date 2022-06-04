@@ -4786,7 +4786,7 @@ function getPlatformData(version, platform) {
                 binPath: 'bin/',
                 dropSuffix: '.zip',
                 extractFunction: tools.extractZip,
-                url: `https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}-win64-x64.zip`
+                url: `https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}-windows-x86_64.zip`
             };
         case 'mac':
         case 'darwin':
@@ -4794,14 +4794,14 @@ function getPlatformData(version, platform) {
                 binPath: 'CMake.app/Contents/bin/',
                 dropSuffix: '.tar.gz',
                 extractFunction: tools.extractTar,
-                url: `https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}-Darwin-x86_64.tar.gz`
+                url: `https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}-macos-universal.tar.gz`
             };
         case 'linux':
             return {
                 binPath: 'bin/',
                 dropSuffix: '.tar.gz',
                 extractFunction: tools.extractTar,
-                url: `https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}-Linux-x86_64.tar.gz`
+                url: `https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}-linux-x86_64.tar.gz`
             };
         default:
             throw new Error(`Unsupported platform '${platformStr}'`);
