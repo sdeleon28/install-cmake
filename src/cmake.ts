@@ -84,6 +84,7 @@ export async function cmake(): Promise<string> {
 
     const platform = core.getInput('platform');
     const data = getPlatformData(version, platform);
+    console.log({ data });
 
     // Get an unique output directory name from the URL.
     const key: string = hashCode(data.url);
